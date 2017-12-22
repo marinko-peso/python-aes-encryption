@@ -28,7 +28,7 @@ def main():
 			keyphrase = raw_input('Please enter your keyphrase: ')
 		# Fetch output filename. This can be empty and auto generated.
 		out_filename = ''
-		out_filename = raw_input('Enter your output file name. If left blank, it will be auto called <your_file>%s: ' % OUTPUT_FILE_DEFAULT_SUFFIX)
+		out_filename = raw_input('Enter your output file name. If left blank, it will be auto called %s%s: ' % (in_filename, OUTPUT_FILE_DEFAULT_SUFFIX))
 
 		# Encrypt the provided file.
 		# In case of error notify the caller of its content.

@@ -34,6 +34,7 @@ def generate_key(password, salt):
     """
     return hashlib.pbkdf2_hmac('sha256', password, salt, 100000)
 
+
 def encrypt_file(password, keyphrase, in_filename, out_filename=None, chunksize=DEFAULT_CHUNKSIZE):
     """
     Encrypts a file content.
